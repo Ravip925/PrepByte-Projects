@@ -1,0 +1,252 @@
+#main1{
+    padding: 6.3% 18% 6.3% 18%;
+}
+#top{
+    margin-left: 8px;
+}
+.span1{
+    font-size: 4.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(57, 55, 55);
+    font-weight: bolder;
+}
+.span2{
+    font-family: "Raleway";
+    color: rgb(136, 135, 135);
+    font-size: 4.5vw;
+}
+#added{
+    font-family: "Raleway";
+    color: rgb(89, 88, 88);
+    font-size: 2.2vw;
+    cursor:pointer;
+    position: absolute;
+    left: 71vw;
+    top: 6.3vw;
+   
+}
+.img{
+    position: fixed;
+    top: 8.4vw;
+    left: 67vw; 
+}
+#main{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.box{
+    width: 17vw;
+    height: 26vw;
+    background: #FEFBE7;
+    border: 2px solid red;
+    box-shadow: 0.5vw 0.6vw 1vw rgba(0,0,0,0.3);
+    margin: 10px;
+    margin-top: 3vw;
+    box-sizing: border-box;
+    border-radius: 1.5vw;
+    text-align: center;
+
+}
+.p1{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: line-through;
+}
+.p{
+    font-size: 2.3vw;
+    font-family: "Raleway";
+    color: #ff0000;
+}
+hr{
+    height: 0.1vw;
+    border: none;
+    width: 78%;
+    background-color: rgb(77, 76, 76);   
+}
+input.checkbox{
+    width: 2vw;
+    height: 2vw;
+    margin-top: 2vw;
+    display: block;
+    margin-left: 1vw;
+    position: absolute;
+    
+}
+.span3{
+    margin-top: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.6vw;
+    position: absolute;
+    margin-left: -4vw;
+}
+#head{
+    text-align: center;
+    padding: 2% 25% 2% 25%;
+
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(57, 55, 55);
+    font-size: 3.8vw;
+    display: flex;
+    flex-direction: row;
+}
+h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(142, 142, 142);
+    margin: auto;
+}
+  h1:before {
+    margin-right: 15px
+}
+  h1:after {
+    margin-left: 15px
+}
+.add2{
+    font-family: "Raleway";
+    color: rgb(89, 88, 88);
+    font-size: 2.2vw;
+    position:fixed;
+    left: 51vw;
+}
+.add2:hover{
+    color: #000000;
+}
+.img2{
+    position:relative;
+    right: 2vw;
+    bottom: 0.5vw;
+}
+#box1{
+    width: 25vw;
+    height: 28vw;
+    background: #FEFBE7;
+    border: 2px solid red;
+    border-radius: 1vw;
+    box-shadow: 0.5vw 0.6vw 1vw rgba(0,0,0,0.3);
+    position:relative;
+    left: 36.3vw;
+    bottom: 1vw;
+    
+   
+}
+.p2{
+    font-size: 2.3vw;
+    font-family: "Raleway";
+    color: #ff0000;
+    text-align: center;
+}
+.p2:hover{
+    color: #000000;
+}
+.p3{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: line-through;
+    text-align: center;
+}
+input.checkbox3{
+    width: 2vw;
+    height: 2vw;
+    margin-top: 2vw;
+    display: block;
+    margin-left: 6vw;
+    position: absolute;
+
+}
+.span4{
+    margin-top: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.6vw;
+    position: absolute;
+    margin-left: 9vw;
+}
+.img3{
+    position:absolute;
+    left:1vw;
+    bottom: 1vw;
+}
+#block{
+    width: 32vw;
+    height: 18vw;
+    border: 0.2vw solid red;
+    border-radius: 1vw;
+    position: relative;
+    background-color: #FEFBE7;
+    bottom: 30vw;
+    left: 33vw;
+    text-align: center;
+    
+    
+}
+
+.div{
+    padding: 2vw;
+}
+.span5{
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+    
+}
+.ipt{
+    height: 3vw;
+    width: 25vw;
+    border: 0.15vw solid rgb(225, 24, 24);
+    border-radius: 0.9vw;
+    box-shadow: 0.3vw 0.3vw 0.25vw rgba(0,0,0,0.5);
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1vw 2vw;
+    text-align: center;
+    border-radius: 2vw;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vw;
+    width: 9.5vw;
+    cursor: pointer;
+    margin: 2vw;
+  }
+.container :not(#block){
+     filter: blur(4px);
+     
+}
+#block{
+    filter: blur(0px);
+    z-index: +1;
+    
+}
+a{
+    text-decoration: none;
+}
+.span6{
+    font-size: 1.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff0000;
+}
+.back{
+    position: absolute;
+    left: 28vw;
+    bottom: 0.5vw;
+}
+.p0{
+    font-size: 2.3vw;
+    font-family: "Raleway";
+    color: #ff0000;
+}
+.p0:hover{
+    color: rgb(24, 4, 114);
+}
+.p0:active{
+    color: #ff0000;
+}
+#added:hover{
+    color: #ff0000;
+}

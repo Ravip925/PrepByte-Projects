@@ -143,19 +143,13 @@ h1:before, h1:after{
 .p2:hover{
     color: #000000;
 }
-.p3{
-    font-size: 1.5vw;
-    color: red;
-    text-decoration: line-through;
-    text-align: center;
-}
 input.checkbox3{
     width: 2vw;
     height: 2vw;
-    margin-top: 2vw;
     display: block;
     margin-left: 6vw;
     position: absolute;
+    top: 13.8vw;
 
 }
 .span4{
@@ -164,7 +158,9 @@ input.checkbox3{
     font-size:1.6vw;
     position: absolute;
     margin-left: 9vw;
+    top: 12vw;
 }
+
 .img3{
     position:absolute;
     left:1vw;
@@ -181,10 +177,25 @@ input.checkbox3{
     bottom: 30vw;
     left: 33vw;
     text-align: center;
-    
+}
+.divspa{
+    text-align: center;
+    position: absolute;
+    top: 9.5vw;
+    left: 7.8vw;
+}
+.spa{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: line-through;
     
 }
-
+.spa1{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: line-through;
+    
+}
 .div{
     padding: 2vw;
 }

@@ -177,6 +177,7 @@ input.checkbox3{
     border-radius: 1vw;
     position: relative;
     background-color: #FEFBE7;
+    box-shadow: 0.5vw 0.6vw 1vw rgba(0,0,0,0.5);
     bottom: 30vw;
     left: 33vw;
     text-align: center;

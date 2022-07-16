@@ -20,27 +20,46 @@ function displayTime(){                     //will show time in clock
 
 setInterval(displayTime,1000);
 
-let greetTextOne = document.getElementById('greettext');        //greeting text 1
-let greetTextTwo = document.getElementById('greettext2');       //greeting text 2
+// -----------------------------------------
 
-function getOption(){                                           //on clicking following values will get from select
-    let elementOne = document.querySelector('#morning');
-    let textOne = document.getElementById('#pOne');
-    textOne = elementOne.value;
+
+let greetTextOne = document.getElementById('greettext');        //selecting greeting text 1
+let greetTextTwo = document.getElementById('greettext2');       //selecting greeting text 2
+
+
+let elementOne = document.querySelector('#morning');
+let textOne = document.getElementById('#pOne');
+textOne = elementOne.options[elementOne.selectedIndex].value;
+
+let elementTwo = document.querySelector('#afternoon');
+let textTwo = document.getElementById('#pTwo');
+textTwo = elementTwo.options[elementTwo.selectedIndex].value;
+
+let elementThree = document.querySelector('#evening');
+let textThree = document.getElementById('#pThree');
+textThree = elementThree.options[elementThree.selectedIndex].value;
+
+let elementFour = document.querySelector('#night');
+let textFour = document.getElementById('#pFour');
+textFour = elementFour.options[elementFour.selectedIndex].value;
+
+
+function clickMe(){
+    textOne = elementOne.options[elementOne.selectedIndex].value;
+    textTwo = elementTwo.options[elementTwo.selectedIndex].value;
+    textThree = elementThree.options[elementThree.selectedIndex].value;
+    textFour = elementFour.options[elementFour.selectedIndex].value;
     document.querySelector('#pOne').textContent = textOne;
-    let elementTwo = document.querySelector('#afternoon');
-    let textTwo = document.getElementById('#pTwo');
-    textTwo = elementTwo.value;
     document.querySelector('#pTwo').textContent = textTwo;
-    let elementThree = document.querySelector('#evening');
-    let textThree = document.getElementById('#pThree');
-    textThree = elementThree.value;
     document.querySelector('#pThree').textContent = textThree;
-    let elementFour = document.querySelector('#night');
-    let textFour = document.getElementById('#pFour');
-    textFour = elementFour.value;
     document.querySelector('#pFour').textContent = textFour;
+}
 
+
+
+function getOption(){                                //on clicking following values will get from select
+    
+    
     let arrayOne =  new Array();                    //created array to store option value
     arrayOne = textOne.split(" ");                  // splits num and word i.e. 12, AM.
     arrayTwo = textTwo.split(" ");
@@ -62,7 +81,7 @@ function getOption(){                                           //on clicking fo
     let minn = dateTimes.getMinutes();
     let secc = dateTimes.getSeconds();
     let sessionn = document.getElementById('sessions');
-    console.log(dateTimes);
+    //console.log(dateTimes);
     if(hrss >= 12){
         sessionn.innerHTML = 'PM';
     }else{
@@ -79,6 +98,7 @@ function getOption(){                                           //on clicking fo
     if(timeNumOne == hrss &&  sessionn.innerHTML === sessionTextOne){           //morning time
         greetTextOne.innerHTML = "GOOD MORNING !! WAKE UP !!";
         greetTextTwo.innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
+        image.src = "./Component30.png";
     }
 
     if(timeNumTwo == hrss &&  sessionn.innerHTML === sessionTextTwo){           //Afternoon time
@@ -102,6 +122,5 @@ function getOption(){                                           //on clicking fo
 }
 
 setInterval(getOption,1000);
-
 
 

@@ -1,5 +1,8 @@
 
-@import url(//db.onlinewebfonts.com/c/1bb28440d44596129c2c67bb9f94eae3?family=Bauhaus+Hv+BT);
+@font-face {
+    font-family: bauhaus-hv-bt-heavy;
+    src: url(BauhausHeavyBT.ttf);
+}
 body, html{
     width: 100%;
     height: 100%;
@@ -182,15 +185,15 @@ body, html{
     left: 5vw;
 }
 #greettext{
-    font-size: 1.6em;
-    font-family: "Bauhaus Hv BT";
+    font-size: 1.8em;
+    font-family: 'bauhaus-hv-bt-heavy', sans-serif;
     color: antiquewhite;
     
 }
 #greettext2{
     font-size: 1.4em;
     font-weight: bolder;
-    font-family: "Bauhaus Hv BT";
+    font-family: 'bauhaus-hv-bt-heavy', sans-serif;
     color: #8E53F0;
 }
 .btn1{
@@ -353,7 +356,7 @@ body, html{
     background-color: rgba(236, 226, 213, 0.993);
     box-sizing: border-box;
     /* background-image: url("./images/Component\ 30.svg"); */
-    background-image: url("./Component30.svg");
+    background-image: url("./Component30.png");
     background-size: cover;
     background-position: center;
     border-radius: 20px;

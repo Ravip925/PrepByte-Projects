@@ -224,7 +224,7 @@ body, html{
 .time{
     width: 17.3vw;
     height: 120px;
-    background-color: #FC5EFF;
+    background-color: rgba(250, 235, 215, 0.993);
     padding-top: 5px;
     box-sizing: border-box;
     border-radius: 10px;

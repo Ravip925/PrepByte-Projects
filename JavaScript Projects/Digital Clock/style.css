@@ -1,0 +1,371 @@
+
+@import url(//db.onlinewebfonts.com/c/1bb28440d44596129c2c67bb9f94eae3?family=Bauhaus+Hv+BT);
+body, html{
+    width: 100%;
+    height: 100%;
+    background-color: #3D087B;
+    overflow: hidden;
+    align-items: center;
+}
+#main{
+    width: 80vw;
+    height: 90%;
+    box-sizing: border-box;
+    margin: 30px 9.5vw 0 9.5vw;
+}
+.img1{
+    margin-left: 5vw;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 45px;
+}
+.imgOne{
+    width: 165px;
+}
+.dropdown{
+    width: 37vw;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(250, 235, 215, 0.993);
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    left: 5vw;
+}
+.dropimg1{
+    margin-left: 7px;
+}
+.dropimg2{
+    position: absolute;
+    top: 95px;
+    left: 27px;
+    z-index: 2;
+}
+.dropimg3{
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    z-index: 2;
+}
+.dropimg4{
+    position: absolute;
+    top: 252px;
+    left: 24px;
+    z-index: 2;
+}
+.night{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.15em;
+    color: #2d1f75;
+    position: absolute;
+    top: 254px;
+    left: 6vw;  
+}
+.nap{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.15em;
+    color: #2d1f75;
+    position: absolute;
+    top: 175px;
+    left: 6vw;
+}
+.lunch{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.15em;
+    color: #2d1f75;
+    position: absolute;
+    top: 99px;
+    left: 6vw;
+}
+.wakeup{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.15em;
+    color: #2d1f75;
+    position: absolute;
+    top: 17px;
+    left: 6vw;
+}
+.select-css {
+	display: block;
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: rgb(117, 117, 117);
+	line-height: 1.3;
+	padding: .6em 1.4em .5em .8em;
+	width: 14vw;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 5px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: rgb(254, 210, 188);
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+	background-size: 1em auto, 100%;
+}
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	background-color: rgb(255, 244, 239);
+}
+.select-css:focus {
+	border: none;
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.select-css option {
+	font-weight:normal;
+    outline: none;
+}
+.selects1{
+    position: absolute;
+    right: 25px;
+    top: 16px;
+}
+.selects2{
+    position: absolute;
+    right: 25px;
+    top: 95px;
+}
+.selects3{
+    position: absolute;
+    right: 25px;
+    top: 173px;
+}
+.selects4{
+    position: absolute;
+    right: 25px;
+    top: 252px;
+}
+.line1{
+    width: 1.5px;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
+    top: 54px;
+    left: 40px;
+}
+.line2{
+    width: 1.5px;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+.line3{
+    width: 1.5px;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
+    top: 213px;
+    left: 40px;
+}
+.greet{
+    width: 37vw;
+    height: 70px;
+    background-color: #8E53F0;
+    padding-top: 18.5px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    position: relative;
+    top: 95px;
+    left: 5vw;
+}
+#greettext{
+    font-size: 1.6em;
+    font-family: "Bauhaus Hv BT";
+    color: antiquewhite;
+    
+}
+#greettext2{
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: "Bauhaus Hv BT";
+    color: #8E53F0;
+}
+.btn1{
+    border: none;
+    width: 18.5vw;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to right, #6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+    font-size: 1.3em;
+    color: white;
+    position: relative;
+    top: 110px;
+    left: 5vw;
+}
+.btn1:hover .span1{
+    display: none;
+}
+.btn1:hover:before{
+    content: "Party Time!";
+}
+.btn1:hover {
+    background: linear-gradient(to left, #6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+}
+.btn1:active{
+    color: #3D087B;
+}
+.time{
+    width: 17.3vw;
+    height: 120px;
+    background-color: #FC5EFF;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    top: 65px;
+    left: 24.7vw;
+
+}
+.clock{
+    width: 430px;
+    height: 100px;
+    padding-right: 15px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    bottom: 520px;
+    left: 44vw;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    align-content: center;
+    z-index: 5;
+}
+.timeboxes{
+    width: 52px;
+    height: 62px;
+    margin: 10px;
+    background-color: #ffe4e4;
+    box-sizing: border-box;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.clocktext{
+    margin: 30px 25px 0  0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #2d1f75;
+}
+.semicolon{
+    font-size: 2.5em;
+    color: #6E54EC;
+    margin-top: 14px;
+    
+}
+#hours,#minutes,#seconds{
+    font-size: 1.8em;
+    color: #6E54EC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sessions{
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Raleway";
+    font-weight: bold;
+    position: absolute;
+    top: 36px;
+    right: 32px;
+}
+.box1{
+    background-color: #CB52F8;
+}
+.h5{
+    color: #CB52F8;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 55px;
+    left: 110px;  
+}
+.h6{
+    color: #CB52F8;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 55px;
+    left: 196px; 
+}
+.h7{
+    color: #CB52F8;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 55px;
+    left: 280px; 
+}
+.ptag{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    color: #1c0069;
+    line-height: 15px;
+    margin: 10px 0 0 15px ;
+}
+.floatone{
+    width: 350px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 573px;
+    left: 45.8vw;
+    opacity: 0.8;
+}
+.floattwo{
+    width: 300px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 627px;
+    left: 47.6vw;
+    opacity:0.4;
+}
+.greet2{
+    width: 430px;
+    height: 100px;
+    background-color: rgb(253, 222, 222);
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 35px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 608px;
+    left: 44vw;
+}
+.img2{
+    width: 430px;
+    height: 318px;
+    background-color: rgba(236, 226, 213, 0.993);
+    box-sizing: border-box;
+    /* background-image: url("./images/Component\ 30.svg"); */
+    background-image: url("./Component30.svg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 320px;
+    left: 54vw;
+}
+#imageTwo{
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    
+}
+

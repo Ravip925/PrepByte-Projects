@@ -60,7 +60,7 @@ function clickMe(){
 function getOption(){                                //on clicking following values will get from select
     
     
-    let arrayOne =  new Array();                    //created array to store option value
+    //let arrayVoid =  new Array();                    //created array to store option value
     arrayOne = textOne.split(" ");                  // splits num and word i.e. 12, AM.
     arrayTwo = textTwo.split(" ");
     arrayThree = textThree.split(" ");

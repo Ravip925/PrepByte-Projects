@@ -1,3 +1,5 @@
+
+/* IndexHTML Page CSS Code */
 #main1{
     padding: 1% 1% 1% 1%;
 }
@@ -5,11 +7,7 @@
     margin-left: 8px;
     position: relative;  
 }
-#top1{
-    margin: 30px 0 0 8px;
-    
-    position: relative;
-}
+
 .span1{
     font-size: 4rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,6 +26,10 @@
     left: 80vw;
     top: -4.3vw;
 }
+.imgg, .imgg2{
+    width:4vw;
+   
+}
 #added{
     font-family: "Raleway";
     color: rgb(89, 88, 88);
@@ -35,10 +37,6 @@
     cursor:pointer;
     margin: -3.3vw 0vw 0vw 4.5vw;
     
-   
-}
-.imgg, .imgg2{
-    width:4vw;
    
 }
 #main{
@@ -61,14 +59,15 @@
     text-align: center;
 
 }
-.p1{
-    font-size: 1.5vw;
-    color: red;
-    text-decoration: line-through;
-}
-.p{
+.p0{
     font-size: 2.3vw;
     font-family: "Raleway";
+    color: #ff0000;
+}
+.p0:hover{
+    color: rgb(0, 0, 0);
+}
+.p0:active{
     color: #ff0000;
 }
 .hr1, .hr2{
@@ -76,6 +75,11 @@
     border: none;
     width: 78%;
     background-color: rgb(77, 76, 76);   
+}
+.p1{
+    font-size: 1.5vw;
+    color: red;
+    text-decoration: line-through;
 }
 input.checkbox{
     width: 2vw;
@@ -92,6 +96,19 @@ input.checkbox{
     font-size:1.6vw;
     position: absolute;
     margin-left: -4vw;
+}
+.p{
+    font-size: 2.3vw;
+    font-family: "Raleway";
+    color: #ff0000;
+}
+/* IndexHTML Page CSS Code */
+
+/* Add.html Page Code */
+#top1{
+    margin: 30px 0 0 8px;
+    
+    position: relative;
 }
 #head{
     text-align: center;
@@ -126,9 +143,14 @@ h1:before, h1:after{
     left: 25vw;
 
 }
-
-#add2:hover{
-    color: #ff0101;
+.back1{
+    color: #f60101;
+}
+.back1:hover{
+    color: #000000;
+}
+.back1:active{
+    color: #f60101;
 }
 .img2{
     margin-top: 2.2vw;
@@ -139,8 +161,8 @@ h1:before, h1:after{
 }
 .img2a{
     position:relative;
-    right: 2vw;
-    bottom: 5vw;
+    right: 3vw;
+    bottom: 5.1vw;
 }
 #box1{
     width: 25vw;
@@ -150,7 +172,7 @@ h1:before, h1:after{
     border-radius: 1vw;
     box-shadow: 0.5vw 0.6vw 1vw rgba(0,0,0,0.3);
     position:relative;
-    left: 36.3vw;
+    left: 36.5vw;
     bottom: 4vw;
     
    
@@ -161,7 +183,18 @@ h1:before, h1:after{
     color: #ff0000;
     text-align: center;
 }
-.p2:hover{
+.pb:hover{
+    color: #000000;
+}
+.pb, .pc:active{
+    color: #f30303;
+}
+.pb{
+    font-family: "Raleway";
+    color: #ff0000;
+}
+.pc{
+    font-family: "Raleway";
     color: #000000;
 }
 input.checkbox3{
@@ -293,17 +326,7 @@ a{
     left: 28vw;
     bottom: 0.5vw;
 }
-.p0{
-    font-size: 2.3vw;
-    font-family: "Raleway";
-    color: #ff0000;
-}
-.p0:hover{
-    color: rgb(24, 4, 114);
-}
-.p0:active{
-    color: #ff0000;
-}
+
 #added:hover{
     color: #ff0000;
 }
@@ -743,7 +766,7 @@ a{
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(57, 55, 55);
         font-size: 10vw;
-        margin-left: 17vw;
+        margin-left: 18vw;
         display: flex;
     }
     h1:before, h1:after{
@@ -781,7 +804,7 @@ a{
         box-shadow: 2vw 2vw 2.2vw rgba(0,0,0,0.3);
         position:relative;
         left: 11vw;
-        bottom: -6vw;
+        bottom: -5vw;
     }
     .p2{
         font-size: 8vw;

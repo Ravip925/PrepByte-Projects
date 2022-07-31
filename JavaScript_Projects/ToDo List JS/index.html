@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Lists</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main1">
+        <div id="top">
+            <span class="span1">Tasks</span> <span class="span2">Lists</span>
+            <div id="add">
+                <img id="popup" onclick="toggle()" class="imgg" src="./images/plus.png" alt="">
+                <p onclick="toggle()" id="added">Add List</p>
+            </div>
+             
+        </div>
+        <p id="startup">No Task Available</p>
+       
+        
+
+<!-- ================================================================================================================================================== -->
+
+        <div id="block">
+            <div class="div">
+                <span class="span5">Add New List</span>
+                <br>
+            </div>
+            <input id="inputOne" class="ipt" value="" type="text">
+            <button onclick="addCard();closePopup()" id="buttonOne" class="button">ADD</button>
+            <button onclick="closePopup()" id="btnClose" class="button btnclose">CLOSE</button>
+            
+        </div>
+
+<!-- ======================================================================================================================================================== -->
+        <div id="block1">
+            <div class="div">
+                <span class="span5">Add Task</span>
+                <br>
+            </div>
+            <input id="inputTwo" value="" class="ipt" type="text">
+            <button id="block1add" class="button">ADD</button>
+            <button id="block1btn" class="button btnclose">CLOSE</button>
+            
+        </div>
+        
+
+<!-- ============================================================================================================================================================= -->
+        <div id="index1">
+        <div id="head">
+                <div><h1><span id="index1pagetitle">trip to Paris</span></h1></div>
+                <span id="index1back" class="back1">Back</span>
+                <img id="index1imgback" class="img2a" src="./images/previous.png" alt="">
+                <img id="index1imgadd" class="imgcard" src="./images/plus.png" alt="">
+                
+            </div>
+            
+            <div id="box1">
+                <p class="p2"><span id="index1pageboxtitle" class="pb">Trip to Paris</span></p>
+                <hr class="hr2">
+                <div id="taskdoneindexone">
+                    <!-- <p id="taskpendingindexone"><span id="spanPendingindexone">Swim</span> <button id="btnDone2" type="">Mark Done</button></p> -->
+                </div>
+                <img id="plus2" src="./images/plus.png">
+                <img id="delete2" class="delete" src="./images/delete.png">
+            </div> 
+                
+            
+        </div>
+        <div id="main">
+        <!--<div class="box">
+                <p class="p0">
+                    <span class="pc">Trip to Paris</span>
+                </p>
+                <hr class="hr1">
+                <div id="taskdone">
+                    <p id="taskpending"><span class="spantext" id="spanPending">Swim</span> <button id="btnDone" type="">Mark Done</button></p>
+                    
+                    
+                </div>
+                <img id="popup2" onclick="toggleTwo()" class="img3" src="./images/plus.png" alt="">
+                <img class="delete" src="./images/delete.png" alt="">
+            </div> -->
+            
+            
+        </div>
+    </div>
+
+    <script src="Todo.js"></script>
+</body>
+</html>

@@ -168,9 +168,7 @@ function addCard(){
                 }
             
             }
-            
-            plusTwo.onclick =function(){
-                
+            function openPopupThree(){
                 let popThree = document.getElementById("block3");
                 popThree.style.display = "block";
                 let blockThreeClose = document.getElementById("block3closebtn")
@@ -195,9 +193,14 @@ function addCard(){
                     indexOne.style.filter = "blur(0)";
                     indexOne.style.pointerEvents = "all";
                 }
+            }
+            plusTwo.onclick =function(){
+                openPopupThree();
             
             }
-            
+            indexOnePageBoxTitle.onclick = function(){
+                openPopupThree();
+            }
             // if(taskDiv.childElementCount != 0){  //to mark tasks done
                
             // }

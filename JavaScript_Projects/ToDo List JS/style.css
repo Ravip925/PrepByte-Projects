@@ -201,24 +201,12 @@ input.checkbox{
     
 }
 
-/* .p{
-    font-size: 2.3vw;
-    font-family: "Raleway";
-    color: #ff0000;
-} */
-/* IndexHTML Page CSS Code */
-
-/* Add.html Page Code */
-/* #top1{
-    margin: 30px 0 0 8px;
-    
-    position: relative;
-} */
 #head{
     text-align: center;
     padding: 0% 25% 2% 25%;
     position: relative;
     height: 600px;
+    
 
 }
 h1 {
@@ -260,13 +248,7 @@ h1:before, h1:after{
 .back1:active{
     color: #000000;
 }
-/* .img2{
-    margin-top: 2.2vw;
-    position:relative;
-    right: 2vw;
-    bottom: 5vw;
-    
-} */
+
 .img2a{
     width: 45px;
     position: relative;
@@ -363,51 +345,7 @@ h1:before, h1:after{
     z-index: +5;
     display: none;
 }
-#block2{
-    width: 32vw;
-    height: 18vw;
-    border: 0.2vw solid red;
-    border-radius: 1vw;
-    background-color: rgb(255, 247, 248);
-    box-shadow: 0.5vw 0.6vw 1vw rgba(0,0,0,0.5);
-    position: absolute;
-    bottom: 15vw;
-    top: 15vw;
-    left: 33.2vw;
-    text-align: center;
-}
-/* .img5a{
-    width: 3vw;
-    height: 3vw;
-    position:absolute;
-    top: -6vw;
-    right: 2vw;
-} */
-/* .container{
-    margin-top: 0;
-    pointer-events: none;
-    position: relative;
-    z-index: -2;
-    
-} */
-/* .divspa{
-    text-align: center;
-    position: absolute;
-    top: 9.5vw;
-    left: 7.8vw;
-} */
-/* .spa{
-    font-size: 1.5vw;
-    color: red;
-    text-decoration: line-through;
-    
-} */
-/* .spa1{
-    font-size: 1.5vw;
-    color: red;
-    text-decoration: line-through;
-    
-} */
+
 .div{
     padding: 2vw;
     z-index: 1;
@@ -444,26 +382,6 @@ h1:before, h1:after{
     background-color: #f30303;
     cursor: pointer;
 }
-
-
-/* a{
-    text-decoration: none;
-    color: #000000;
-}
-a:active{
-    color: red;
-} */
-
-/* .span6{
-    font-size: 1.8vw;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ff0000;
-} */
-/* .back{
-    position: absolute;
-    left: 28vw;
-    bottom: 0.5vw;
-} */
 
 #added:hover{
     color: #ff0000;

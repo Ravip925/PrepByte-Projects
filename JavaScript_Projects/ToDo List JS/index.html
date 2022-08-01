@@ -7,6 +7,7 @@
     <title>Todo Lists</title>
     <link rel="shortcut icon" href="./Todo.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -47,12 +48,22 @@
             <button id="block1btn" class="button btnclose">CLOSE</button>
             
         </div>
+        <div id="block3">
+            <div class="div">
+                <span class="span5">Add Task</span>
+                <br>
+            </div>
+            <input id="inputThree" value="" class="ipt" type="text">
+            <button id="block3add" class="button">ADD</button>
+            <button id="block3closebtn" class="button btnclose">CLOSE</button>
+            
+        </div>
         
 
 <!-- ============================================================================================================================================================= -->
         <div id="index1">
         <div id="head">
-                <div><h1><span id="index1pagetitle">trip to Paris</span></h1></div>
+                <div><h1><span id="index1pagetitle"></span></h1></div>
                 <span id="index1back" class="back1">Back</span>
                 <img id="index1imgback" class="img2a" src="./images/previous.png" alt="">
                 <img id="index1imgadd" class="imgcard" src="./images/plus.png" alt="">
@@ -60,7 +71,7 @@
             </div>
             
             <div id="box1">
-                <p class="p2"><span id="index1pageboxtitle" class="pb">Trip to Paris</span></p>
+                <p class="p2"><span id="index1pageboxtitle" class="pb"></span></p>
                 <hr class="hr2">
                 <div id="taskdoneindexone">
                     <!-- <p id="taskpendingindexone"><span id="spanPendingindexone">Swim</span> <button id="btnDone2" type="">Mark Done</button></p> -->

@@ -21,6 +21,8 @@ let indexOneImgAdd = document.getElementById("index1imgadd");
 let plusTwo = document.getElementById("plus2");
 let deleteTwo = document.getElementById("delete2");
 
+let valueArray = [];
+
 // --------------------------------------------------------------------------------
 
 //main addtask button popup
@@ -78,7 +80,7 @@ function showSecondPage(){
     indexOne.style.display = "block";
     indexOne.style.filter = "blur(0)";
 }
-
+let inputThree = document.getElementById("inputThree").value;
 // ---------------------------------------------------------------------------------
 //after clicking add cards will be created
 function addCard(){
@@ -131,29 +133,19 @@ function addCard(){
         spanOne.innerText = input; //input value assigned to span
         box.style.userSelect = "auto";
         
-
-        let taskDone = document.createElement("div"); //2nd page card inner div
+        let taskDone = document.createElement("div"); //1st page card inner div
         taskDone.setAttribute("id","taskdone");
         
 
         //trip to text onclick function [2nd page]
         spanOne.onclick = function(){
             showSecondPage();
-
-            taskDiv.innerHTML = taskDone.innerHTML;
-            let taskDoneButton2 = document.getElementById("btnDone");
+            
+            // let taskDoneButton = document.getElementById("btnDone");
+            // let taskDoneButton3 = document.getElementsByClassName("btnDone10");
             let spanPending = document.getElementById("spanPending");
-            let inputTwoS = document.getElementById("inputTwo").value;
-    
-            if(taskDiv.hasChildNodes()){  //to mark done tasks
-                taskDoneButton2.onclick = function(){
-                    spanPending.style.color = "red";
-                    spanPending.style.fontSize = "1.1em";
-                    spanPending.style.textDecoration = "line-through 2px";
-                    taskDoneButton2.style.display = "none"
-                
-                }
-            }
+            //let inputTwoS = document.getElementById("inputTwo").value;
+            taskDiv.innerHTML = taskDone.innerHTML;
 
             indexOneBack.onclick = function(){ //return to main page
                 showMainPage();
@@ -167,6 +159,7 @@ function addCard(){
 
             indexOneImgAdd.onclick = function(){  //2nd page top add button
                 toggle();
+                
                 indexOne.style.filter = "blur(6px)";
                 cardButton.onclick = function(){
                     addCard();
@@ -175,40 +168,46 @@ function addCard(){
                 }
             
             }
-            indexOnePageBoxTitle.onclick = function(){
-                popTwo.style.display = "block";
-                indexOne.style.filter = "blur(6px)";
-                indexOne.style.pointerEvents = "none";
-                
-                blockbtn.onclick = function(){
-                    popTwo.style.display = "none";
-                    indexOne.style.filter = "blur(0)";
-                    indexOne.style.pointerEvents = "all";
-                }
-                blockOneAdd.onclick = function(){
-                    
-                    popTwo.style.display = "none";
-                    indexOne.style.filter = "blur(0)";
-                    indexOne.style.pointerEvents = "all";
-                }
-            }
+            
             plusTwo.onclick =function(){
-                popTwo.style.display = "block";
+                
+                let popThree = document.getElementById("block3");
+                popThree.style.display = "block";
+                let blockThreeClose = document.getElementById("block3closebtn")
+                let blockThreeAdd = document.getElementById("block3add")
                 indexOne.style.filter = "blur(6px)";
                 indexOne.style.pointerEvents = "none";
                 
-                blockbtn.onclick = function(){
-                    popTwo.style.display = "none";
+                blockThreeClose.onclick = function(){
+                    popThree.style.display="none";
                     indexOne.style.filter = "blur(0)";
                     indexOne.style.pointerEvents = "all";
                 }
-                blockOneAdd.onclick = function(){
+            
+                blockThreeAdd.onclick = function(){
+                    valueArray.splice(0,valueArray.length);
+                    document.getElementById("inputThree").addEventListener('focusout',function () { 
+                        return document.getElementById("inputTwo").value = this.value;
+                    });
                     
-                    popTwo.style.display = "none";
+                    
+                    popThree.style.display = "none";
                     indexOne.style.filter = "blur(0)";
                     indexOne.style.pointerEvents = "all";
                 }
+            
             }
+            
+            // if(taskDiv.childElementCount != 0){  //to mark tasks done
+               
+            // }
+
+            $(document).ready(function() {
+                $('#block3add').click(function(){
+                    $('#block1add').click()
+                 })
+            });
+            
             deleteTwo.onclick = function(){  // to delete 2nd page card
                 indexOne.style.display = "none";
                 box.style.display = "none";
@@ -223,6 +222,11 @@ function addCard(){
             //after clicking add button from popup two tasks are added to card
             blockOneAdd.onclick = function(){
                 let inputTwo = document.getElementById("inputTwo").value;
+                
+                let valueObj = {id:1, task:inputTwo}
+                valueArray.push(valueObj);
+                console.log(valueArray);
+            
                 if(inputTwo == ""){
                     alert("Please add your task!");
                 }
@@ -245,15 +249,17 @@ function addCard(){
                     pendingtask.appendChild(spanPending);
                     pendingtask.appendChild(taskDoneButton);
                     box.style.userSelect = "auto";
-
-                    spanPending.innerText = inputTwo; //input assigned to span
-
+                   
+                    spanPending.innerText = valueArray[valueArray.length-1].task; //input assigned to span
+                    taskDiv.innerHTML = taskDone.innerHTML;
+                
                     taskDoneButton.onclick = function(){
                         spanPending.style.color = "red";
                         spanPending.style.fontSize = "1.1em";
                         spanPending.style.textDecoration = "line-through 2px";
                         taskDoneButton.style.display = "none"
                     }
+
 
                     //to close popup after adding tasks in the card
                     CloseMainPagePopupTwo();

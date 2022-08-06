@@ -80,7 +80,7 @@ function showSecondPage(){
     indexOne.style.display = "block";
     indexOne.style.filter = "blur(0)";
 }
-let inputThree = document.getElementById("inputThree").value;
+
 // ---------------------------------------------------------------------------------
 //after clicking add cards will be created
 function addCard(){
@@ -141,12 +141,8 @@ function addCard(){
         spanOne.onclick = function(){
             showSecondPage();
             
-            // let taskDoneButton = document.getElementById("btnDone");
-            // let taskDoneButton3 = document.getElementsByClassName("btnDone10");
-            let spanPending = document.getElementById("spanPending");
-            //let inputTwoS = document.getElementById("inputTwo").value;
+            //taskDiv.innerHTML = taskDone.innerHTML;
             taskDiv.innerHTML = taskDone.innerHTML;
-
             indexOneBack.onclick = function(){ //return to main page
                 showMainPage();
             }
@@ -168,6 +164,12 @@ function addCard(){
                 }
             
             }
+            let mark1 = document.querySelector("#btnDone");
+            let btnDone = document.getElementById("btnDone")
+            let spanPendingTwo = document.querySelector("#spanPending")
+            
+
+
             function openPopupThree(){
                 let popThree = document.getElementById("block3");
                 popThree.style.display = "block";
@@ -176,23 +178,25 @@ function addCard(){
                 indexOne.style.filter = "blur(6px)";
                 indexOne.style.pointerEvents = "none";
                 
+                blockThreeAdd.onclick = function(){
+                    valueArray.splice(0,valueArray.length);
+                    let inputThree = document.getElementById("inputThree").value;
+                    console.log(inputThree);
+
+                    let valueObj = {id:1, task:inputThree}
+                    valueArray.push(valueObj);
+                   
+                    document.getElementById("spanPending").innerText = inputThree;
+                    popThree.style.display = "none";
+                    indexOne.style.filter = "blur(0)";
+                    indexOne.style.pointerEvents = "all";
+                }
                 blockThreeClose.onclick = function(){
                     popThree.style.display="none";
                     indexOne.style.filter = "blur(0)";
                     indexOne.style.pointerEvents = "all";
                 }
             
-                blockThreeAdd.onclick = function(){
-                    valueArray.splice(0,valueArray.length);
-                    document.getElementById("inputThree").addEventListener('focusout',function () { 
-                        return document.getElementById("inputTwo").value = this.value;
-                    });
-                    
-                    
-                    popThree.style.display = "none";
-                    indexOne.style.filter = "blur(0)";
-                    indexOne.style.pointerEvents = "all";
-                }
             }
             plusTwo.onclick =function(){
                 openPopupThree();
@@ -201,9 +205,7 @@ function addCard(){
             indexOnePageBoxTitle.onclick = function(){
                 openPopupThree();
             }
-            // if(taskDiv.childElementCount != 0){  //to mark tasks done
-               
-            // }
+            
 
             $(document).ready(function() {
                 $('#block3add').click(function(){
@@ -211,6 +213,13 @@ function addCard(){
                  })
             });
             
+            mark1.onclick = function(){
+                btnDone.style.display = "none";
+                spanPendingTwo.style.color = "red";
+                spanPendingTwo.style.fontSize = "1.1em";
+                spanPendingTwo.style.textDecoration = "line-through 2px";
+                
+            }
             deleteTwo.onclick = function(){  // to delete 2nd page card
                 indexOne.style.display = "none";
                 box.style.display = "none";
@@ -253,9 +262,13 @@ function addCard(){
                     pendingtask.appendChild(taskDoneButton);
                     box.style.userSelect = "auto";
                    
-                    spanPending.innerText = valueArray[valueArray.length-1].task; //input assigned to span
-                    taskDiv.innerHTML = taskDone.innerHTML;
-                
+                    setTimeout(() => {
+                        spanPending.innerText = valueArray[valueArray.length-1].task; //input assigned to span
+                        taskDiv.innerHTML = taskDone.innerHTML;
+                        valueArray.splice(0,valueArray.length);
+                    }, 300);
+                    
+                   
                     taskDoneButton.onclick = function(){
                         spanPending.style.color = "red";
                         spanPending.style.fontSize = "1.1em";
@@ -267,6 +280,7 @@ function addCard(){
                     //to close popup after adding tasks in the card
                     CloseMainPagePopupTwo();
                 }
+            
             }
         }
         //delete button
@@ -298,15 +312,3 @@ function closePopup(){
     
     }  
 }
-
-
-
-
-
-
-
-
-
-
-
-

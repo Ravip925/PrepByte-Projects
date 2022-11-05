@@ -10,6 +10,9 @@ body, html{
     overflow: hidden;
     align-items: center;
 }
+.footer{
+    display: none;
+}
 #main{
     width: 80vw;
     height: 90%;
@@ -350,6 +353,7 @@ body, html{
     bottom: 608px;
     left: 44vw;
 }
+
 .img2{
     width: 430px;
     height: 318px;
@@ -372,3 +376,396 @@ body, html{
     
 }
 
+
+
+/* For smartphone */
+
+@media screen and (max-width: 480px) {
+    body, html{
+        width: 100%;
+        height: 100%;
+        background-color: #3D087B;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: center;
+    }
+    
+    #main{
+        width: 98%;
+        height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 2vw;
+
+    }
+
+    .greet2{
+        display: none;
+    }
+
+    .img1{
+        margin-left: 0vw;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 25px;
+    }
+    .clock{
+        width: 93.5vw;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        box-sizing: border-box;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 0vw;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: flex-end;
+        align-content: center;
+        z-index: 5;
+    }
+    .timeboxes{
+        width: 15vw;
+        height:60px;
+        margin: 10px;
+        margin-top: 50px;
+        background-color: #f6a6a6;
+        box-sizing: border-box;
+        padding-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .clocktext{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        color: #2d1f75;
+        position: absolute;
+        left: 40vw;
+        top: -10px;
+    }
+    .semicolon{
+        font-size: 2.5em;
+        color: #6E54EC;
+        margin-top: 52px;
+        
+    }
+    #hours,#minutes,#seconds{
+        font-size: 1.7em;
+        color: #6E54EC;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+    }
+    #hours{
+        margin-left: 3vw;
+    }
+    #minutes{
+        margin-left: 0.5vw;
+    }
+    #seconds{
+        margin-left: 0.5vw;
+    }
+    
+    #sessions{
+        color: #ffffff;
+        font-size: 1.5em;
+        font-family: "Raleway";
+        font-weight: bold;
+        position: absolute;
+        top: 80px;
+        right: 9.5vw;
+    }
+    .box1{
+        background-color: #2ee6e6ef;
+    }
+    .h5{
+        color: #404040;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 30px;
+        left: 0vw;  
+    }
+    .h6{
+        color: #373737;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 30px;
+        left: 0vw; 
+    }
+    .h7{
+        color: #CB52F8;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        top: 30px;
+        left: 0vw; 
+    }
+    .ptag{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1vw;
+        color: #1c0069;
+        line-height: 15px;
+        
+    }
+    .floatone{
+        width: 79.5vw;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        position: relative;
+        top: 50px;
+        left: 3vw;
+        opacity: 0.8;
+    }
+    .floattwo{
+        width: 70vw;
+        height: 70px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-left: 15px;
+        position: relative;
+        top: 0px;
+        left: 7.5vw;
+        opacity:0.4;
+    }
+    .dropdown{
+        width: 93.5vw;
+        height: 420px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: rgba(250, 235, 215, 0.993);
+        border-radius: 10px;
+        position:absolute;
+        top: 712px;
+        left: 4vw;
+    }
+    .greet{
+        width: 93.5vw;
+        height: 70px;
+        background-color: #9453fc;
+        padding: 5vw auto;
+        box-sizing: border-box;
+        text-align: center;
+        align-content: center;
+        border-radius: 10px;
+        position: absolute;
+        top: 330px;
+        left: 4vw;
+    }
+    #greettext{
+        font-size: 1.4em;
+        font-family: 'bauhaus-hv-bt-heavy', sans-serif;
+        color: antiquewhite;
+        
+    }
+    .img2{
+        width: 93.5vw;
+        height: 245px;
+        background-color: rgba(236, 226, 213, 0.993);
+        box-sizing: border-box;
+        /* background-image: url("./images/Component\ 30.svg"); */
+        background-image: url("./Component30.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        position: absolute;
+        top: 430px;
+        left: 4vw;
+    }
+    #imageTwo{
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .dropimg1{
+        margin-left: 7px;
+    }
+    .dropimg2{
+        position: absolute;
+        top: 110px;
+        left: 27px;
+        z-index: 2;
+    }
+    .dropimg3{
+        position: absolute;
+        top: 210px;
+        left: 30px;
+        z-index: 2;
+    }
+    .dropimg4{
+        position: absolute;
+        top: 303px;
+        left: 24px;
+        z-index: 2;
+    }
+    .night{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.15em;
+        color: #2d1f75;
+        position: absolute;
+        top: 308px;
+        left: 18vw;  
+    }
+    .nap{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.15em;
+        color: #2d1f75;
+        position: absolute;
+        top: 210px;
+        left: 18vw;
+    }
+    .lunch{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.15em;
+        color: #2d1f75;
+        position: absolute;
+        top: 115px;
+        left: 18vw;
+    }
+    .wakeup{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.15em;
+        color: #2d1f75;
+        position: absolute;
+        top: 17px;
+        left: 18vw;
+    }
+    .select-css {
+        display: block;
+        font-size: 0.8em;
+        font-family: sans-serif;
+        font-weight: 700;
+        color: rgb(117, 117, 117);
+        line-height: 1.3;
+        height: 30px;
+        width: 50vw;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: rgb(255, 138, 79);
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: 1em auto, 100%;
+    }
+    .select-css::-ms-expand {
+        display: none;
+    }
+    .select-css:hover {
+        background-color: rgb(255, 244, 239);
+    }
+    .select-css:focus {
+        border: none;
+        box-shadow: 0 0 0 3px -moz-mac-focusring;
+        color: #222;
+        outline: none;
+    }
+    .select-css option {
+        font-weight:normal;
+        outline: none;
+    }
+    .selects1{
+        position: absolute;
+        left: 18vw;
+        top: 60px;
+    }
+    .selects2{
+        position: absolute;
+        left: 18vw;
+        top: 158px;
+    }
+    .selects3{
+        position: absolute;
+        left: 18vw;
+        top: 255px;
+   
+    }
+    .selects4{
+        position: absolute;
+        left: 18vw;
+        top: 355px;
+    }
+    .line1{
+        width: 1.5px;
+        height: 50px;
+        background-color: gray;
+        position: absolute;
+        top: 54px;
+        left: 40px;
+    }
+    .line2{
+        width: 1.5px;
+        height: 50px;
+        background-color: gray;
+        position: absolute;
+        top: 145px;
+        left: 40px;
+    }
+    .line3{
+        width: 1.5px;
+        height: 50px;
+        background-color: gray;
+        position: absolute;
+        top: 248px;
+        left: 40px;
+
+    }
+    .time{
+        width: 93.5vw;
+        height: 120px;
+        background-color: rgba(250, 235, 215, 0.993);
+        padding-top: 5px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        position: absolute;
+        top: 1165px;
+        left: 4vw;
+    
+    }
+
+    .ptag{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        color: #1c0069;
+        line-height: 15px;
+        margin: 10px 0 0 15px ;
+    }
+    .btn1{
+        border: none;
+        width: 93.5vw;
+        height: 45px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: linear-gradient(to right, #6E54EC,#CB52F8,#FC5EFF,#F1A7C5);
+        font-size: 1.3em;
+        color: white;
+        position: absolute;
+        top: 1320px;
+        left: 4vw;
+    }
+    .footer{
+        width: 102%;
+        height: 100px;
+        text-align: center;
+        background-color: #000000;
+        box-sizing: border-box;
+        padding-top: 40px;
+        display: block;
+        position: absolute;
+        top: 1450px;
+        left: 0;
+    }
+    .footer small{
+        color: wheat;
+        font: 0.85em sans-serif;
+    }
+
+
+
+
+
+}

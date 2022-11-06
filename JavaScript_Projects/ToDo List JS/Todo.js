@@ -97,6 +97,7 @@ function addCard(){
         let main = document.getElementById("main");
         let box = document.createElement("div");
         box.setAttribute("class","box");
+        box.setAttribute("id","slide-right");
 
         main.appendChild(box);
 
@@ -181,7 +182,6 @@ function addCard(){
                 blockThreeAdd.onclick = function(){
                     valueArray.splice(0,valueArray.length);
                     let inputThree = document.getElementById("inputThree").value;
-                    console.log(inputThree);
 
                     let valueObj = {id:1, task:inputThree}
                     valueArray.push(valueObj);
@@ -220,13 +220,13 @@ function addCard(){
                 spanPendingTwo.style.textDecoration = "line-through 2px";
                 
             }
-            deleteTwo.onclick = function(){  // to delete 2nd page card
-                indexOne.style.display = "none";
-                box.style.display = "none";
-                showMainPage();
-            }
         }
-    
+        
+        deleteTwo.onclick = function(){  // to delete 2nd page card
+            indexOne.style.display = "none";
+            box.style.display = "none";
+            showMainPage();
+        }
         //1st page inner task add button
         imgOne.onclick = function(){
             showMainPagePopupTwo();
@@ -237,7 +237,6 @@ function addCard(){
                 
                 let valueObj = {id:1, task:inputTwo}
                 valueArray.push(valueObj);
-                console.log(valueArray);
             
                 if(inputTwo == ""){
                     alert("Please add your task!");
@@ -312,3 +311,15 @@ function closePopup(){
     
     }  
 }
+
+
+
+
+
+
+
+
+
+
+
+

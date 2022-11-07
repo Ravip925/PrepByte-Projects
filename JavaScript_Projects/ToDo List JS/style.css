@@ -420,3 +420,215 @@ h1:before, h1:after{
     color: rgb(206, 204, 202);
 }
 
+@media screen and (max-width: 480px) {
+  body,
+  html {
+    width: 100%;
+    height: auto;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 0px;
+    border-radius: 10px;
+    background-color: #737373;
+  }
+
+  #main1 {
+   box-sizing: border-box;
+   padding: 30px 1% 30px 0%;
+  
+  }
+  #top {
+    margin: 0 3vw 0 3vw;
+    position: relative;
+  }
+  #startup {
+    left: 5vw;
+    top: 100px;
+    font-size: 2em;
+  }
+  .span1 {
+    font-size: 2.8rem;
+  }
+  .span2 {
+    margin-left: 5px;
+    font-size: 2.8rem;
+  }
+  #add {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    left: 87%;
+    top: 7px;
+  }
+  .imgg {
+    cursor: pointer;
+    width:40px;
+  }
+  .imgcard {
+    width: 45px;
+    position: relative;
+    top: -85px;
+    left: 32.5vw;
+    cursor: pointer;
+  }
+  #added {
+    display: none;
+  }
+  #addedby {
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: -28px;
+    right: 20px;
+  }
+
+  #block,
+  #block1,
+  #block3 {
+      width:85vw;
+      height: 250px;
+      border: 3px solid red;
+      top: 150px;
+      left: 7.5vw;
+      text-align: center;
+      z-index: +5;
+      display: none;
+  }
+
+  .div {
+    box-sizing: border-box;
+    padding: 5vw;
+    z-index: 1;
+  }
+  .span5 {
+    font-size: 1.3em;
+  }
+  .ipt {
+    height: 25px;
+    width: 75vw;
+    border: 1.5px solid rgb(225, 24, 24);
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+    filter: blur(0px);
+  }
+  .button {
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1em;
+    width: 40vw;
+    height: 30px;
+    margin: 20px;
+  }
+  #main {
+    height: auto;
+    margin: 40px 3vw 0 3vw;
+    flex-direction: column;
+
+  }
+  #main10 {
+    position: relative;
+    height: auto;
+  }
+  .box {
+    width: 75vw;
+    height: 370px;
+    margin-left: 0;
+    position: relative;
+    left: -5vw;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+  .p0 {
+    font-size: 1.8em;
+  }
+  .pc {
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .img3 {
+    width: 39.5px;
+    top: 315px;
+    left: 47vw;
+  }
+  .delete {
+    width: 41.5px;
+    position: absolute;
+    top: 315px;
+    left: 60vw;
+  }
+  #taskdone {
+    width: 100%;
+    height: 200px;
+    overflow: scroll;
+  }
+  #head {
+    width: 50%;
+    height: 610px;
+
+  }
+  #index1pagetitle{
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    top: 20px;
+    left: -4vw;
+  }
+  .back1 {
+    display: none;
+  }
+  .img2a {
+    top: -90px;
+    left: -35vw;
+  }
+  h1:before,
+  h1:after {
+      display: none;
+  }
+  .imgcard {
+    width: 45px;
+    top: -90px;
+    left: 34vw;
+  }
+  #box1 {
+    width: 85vw;
+    height: 450px;
+    position: fixed;
+    top: 110px;
+    left: -2vw;
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.596);
+  }
+  .p2{
+    font-size: 2em;
+    font-family: "Raleway";
+    color: #ff0000;
+    text-align: center;
+  }
+  .hr1, .hr2{
+    height: 2px;
+    border-radius: 1px;
+    background-color: rgb(25, 25, 25);   
+  }
+  #plus2{
+    width: 45px;
+    position: relative;
+    top: 15px;
+    left: 52vw;
+  }
+  #delete2{
+      width: 47px;
+      position: relative;
+      top: 15px;
+      left: 55vw;
+  }
+  #taskdoneindexone{
+    text-align: center;
+    width: 100%;
+    height: 265px;
+    overflow: auto;
+}
+
+}

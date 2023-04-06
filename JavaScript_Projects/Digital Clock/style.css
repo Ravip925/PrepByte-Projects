@@ -7,7 +7,7 @@ body, html{
     width: 100%;
     height: 100%;
     background-color: #3D087B;
-    overflow: hidden;
+    overflow-x: hidden;
     align-items: center;
 }
 .footer{
